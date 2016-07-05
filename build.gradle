@@ -37,6 +37,10 @@ dependencyManagement {
 	}
 }
 
+stage {
+ dependsOn bootRepackage
+}
+
 bootRun {
   systemProperties = System.properties
 }
