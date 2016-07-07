@@ -1,0 +1,10 @@
+eureka:
+  server:
+    hostname: ${EUREKAHOST:localhost}
+  client:
+    service-url:
+      default-zone: http://${eureka.server.hostname}/eureka
+
+spring:
+  application:
+    name: rambling-admin
